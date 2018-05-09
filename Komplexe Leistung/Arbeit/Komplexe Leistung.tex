@@ -1,0 +1,64 @@
+%-------------Layout-------------
+\documentclass[a4paper,12pt]{scrreprt}
+%\usepackage{anysize} \marginsize{4cm}{2cm}{4cm}{2cm}
+\usepackage[onehalfspacing]{setspace}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{arial}
+\bibliographystyle{unsrt}
+
+%-------------pdf-infos-------------
+\usepackage[
+	pdftitle={Komplexe Leistung},
+	pdfsubject={Roboter},
+	pdfauthor={Hieu Bui Tien},
+	pdfkeywords={},	
+	hidelinks
+	]{hyperref}
+
+%-------------packages-------------
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx,subfig}
+\graphicspath{{img/}}
+\usepackage{lmodern}
+\usepackage{color}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{cite}
+
+%-------------Besondere Trennungen ggf.-------------
+%\hyphenation{}
+
+%-------------Anfang-------------
+\begin{document}
+
+%-------------Titelblatt-------------
+\pagestyle{empty}
+\include{Deckblatt/Deckblatt}
+\cleardoubleoddpage
+
+%-------------Inhaltsverzeichnis-------------
+\tableofcontents
+
+%-------------Vorwort-------------
+\include{Vorwort/Vorwort}
+
+%-------------Einleitung-------------
+\include{Einleitung/Einleitung}
+
+%-------------Hauptteil1-------------
+\include{Hauptteil/Hauptteil1}
+
+%-------------Hauptteil2-------------
+\include{Hauptteil/Hauptteil2}
+
+%-------------Fazit-------------
+\include{Schlussteil/Fazit}
+
+%-------------Anhang-------------
+\include{Anhang/Anhang}
+
+\end{document}
